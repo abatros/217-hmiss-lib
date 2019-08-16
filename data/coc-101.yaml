@@ -1,0 +1,15 @@
+content_type: coc
+name: coc-101
+CoCCode: hb-345
+Geocode: 93107
+Address1: rosemead 286
+Address2: appartment 3
+City: Santa Maria
+State: CA
+ZIP: 93107
+GeographyType:
+  x1: Urban
+  x2: Suburban
+  x3: Rural
+  x99: Unknown / data not collected
+UserID: dkz

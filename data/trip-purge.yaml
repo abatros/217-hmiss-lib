@@ -1,0 +1,13 @@
+---
+- otype: config
+  skip: true
+  create_missing_organization: true
+  create_missing_user: true
+  create_missing_client: true
+
+
+- otype: -list-folders
+- otype: -purge-groups
+- otype: -purge-folders
+  cascade: true
+- otype: xray-instance

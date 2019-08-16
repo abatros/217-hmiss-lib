@@ -1,0 +1,16 @@
+content_type: inventory
+name: Inventory-101
+InventoryID: Inventory-101
+CoCCode: az-786
+HouseholdType:
+  x1: Households without children
+  x2: Households with at least one adult and one child
+  x3: Households with only children
+Availability:
+  x1: Year-round
+  x2: Seasonal
+  x3: Overflow
+UnitInventory: 3
+BedInventory: 12
+CHVetBedInventory: 0
+YouthVetBedInventory: 0

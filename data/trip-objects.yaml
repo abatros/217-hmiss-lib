@@ -1,0 +1,125 @@
+# hmis-client
+# hmis-org
+# hmis-project
+# hmis-enrollment
+
+---
+- otype: acs-object-type
+  object_type: hmis-client-folder
+  pretty_name: HMIS Client Folder
+  pretty_plural: HMIS Clients Folders
+  supertype: content_folder
+#  table_name: undefined,
+#  id_column: undefined,
+#  package_name: undefined,
+  abstract_p: false
+#  type_extension_table: undefined,
+#  name_method: undefined
+
+- otype: acs-object-type
+  object_type: hmis-org
+  pretty_name: HMIS Organization
+  pretty_plural: HMIS Organizations
+  supertype: acs_object
+#  table_name: undefined,
+#  id_column: undefined,
+#  package_name: undefined,
+  abstract_p: false
+#  type_extension_table: undefined,
+#  name_method: undefined
+
+- otype: acs-object-type
+  object_type: hmis-org-folder
+  pretty_name: HMIS Organizations Folder
+  pretty_plural: HMIS Organizations Folder
+  supertype: content_folder
+  abstract_p: false
+
+
+- otype: acs-object-type
+  object_type: hmis-project
+  pretty_name: HMIS Project
+  pretty_plural: HMIS Projects
+  supertype: acs_object
+#  table_name: undefined,
+#  id_column: undefined,
+#  package_name: undefined,
+  abstract_p: false
+#  type_extension_table: undefined,
+#  name_method: undefined
+
+- otype: acs-object-type
+  object_type: hmis-enrollment
+  pretty_name: HMIS Enrollment
+  pretty_plural: HMIS Enrollments
+  supertype: acs_object
+  abstract_p: false
+
+- otype: acs-object-type
+  object_type: tapp-community
+  pretty_name: TAPP Community
+  pretty_plural: TAPP Communities
+  supertype: application_group
+  abstract_p: false
+
+- otype: acs-rel-type
+  rel_type: tapp-member-rel
+#  object_type_one: tapp-community
+  object_type_one: application_group
+#   role-one
+  object_type_two: user
+  role_two: member
+  pretty_name: TAPP member
+  pretty_plural: TAPP members
+  supertype: membership_rel
+
+- otype: acs-rel-type
+  rel_type: tapp-admin-rel
+#  object_type_one: tapp-community
+  object_type_one: application_group
+#  role-one
+  object_type_two: user
+  role_two: admin
+  pretty_name: TAPP Administrator
+  pretty_plural: TAPP Administrator
+  supertype: membership_rel
+
+- otype: acs-rel-type
+  rel_type: hmis-org-admin-rel
+  object_type_one: hmis-org-folder
+#  role-one
+  object_type_two: user
+  role_two: admin
+  pretty_name: HMIS Organization Administrator
+  pretty_plural: HMIS Organization Administrators
+  supertype: membership_rel
+
+- otype: acs-rel-type
+  rel_type: tapp-org-staff-rel
+  object_type_one: content_folder
+#  role-one
+  object_type_two: user
+  role_two: member
+  pretty_name: TAPP Organization Staff
+  pretty_plural: TAPP Organization Staff
+  supertype: membership_rel
+
+- otype: acs-rel-type
+  rel_type: tapp-program-admin-rel
+  object_type_one: content_folder
+#  role-one
+  object_type_two: user
+  role_two: admin
+  pretty_name: TAPP Program Administrator
+  pretty_plural: TAPP Program Administrators
+  supertype: membership_rel
+
+- otype: acs-rel-type
+  rel_type: tapp-program-staff-rel
+  object_type_one: content_folder
+#  role-one
+  object_type_two: user
+  role_two: member
+  pretty_name: TAPP Program Staff
+  pretty_plural: TAPP Program Staff
+  supertype: membership_rel

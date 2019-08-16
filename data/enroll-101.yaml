@@ -1,0 +1,66 @@
+PersonalID: alfonso
+ProjectID: project-K
+EntryDate: nov 13 2017
+HouseholdID: blue house Pasadena
+RelationshipToHoH: 2
+LivingSituation: Foster care home or foster care group home
+LengthOfStay: 3-One month or more, but less than 90 days
+LOSUnderThreshold: no
+PreviousStreetESSH:
+DateToStreetESSH: date
+TimesHomelessPastThreeYears: integer
+MonthsHomelessPastThreeYears: integer
+DisablingCondition: integer
+DateOfEngagement: date
+MoveInDate: date
+DateOfPATHStatus: date
+ClientEnrolledInPATH: integer
+ReasonNotEnrolled: integer
+WorstHousingSituation: integer
+PercentAMI: integer
+LastPermanentStreet: varchar(100)
+LastPermanentCity: varchar(50)
+LastPermanentState: varchar(2)
+LastPermanentZIP: varchar(5)
+AddressDataQuality: integer
+DateOfBCPStatus: date
+EligibleForRHY: integer
+ReasonNoServices: integer
+RunawayYouth: integer
+SexualOrientation: integer
+SexualOrientationOther: integer
+FormerWardChildWelfare: integer
+ChildWelfareYears: integer
+ChildWelfareMonths: integer
+FormerWardJuvenileJustice: integer
+JuvenileJusticeYears: integer
+JuvenileJusticeMonths: integer
+UnemploymentFam: integer
+MentalHealthIssuesFam: integer
+PhysicalDisabilityFam: integer
+AlcoholDrugAbuseFam: integer
+InsufficientIncome: integer
+IncarceratedParent: integer
+ReferralSource: integer
+CountOutreachReferralApproaches: integer
+UrgentReferral: integer
+TimeToHousingLoss: integer
+ZeroIncome: integer
+AnnualPercentAMI: integer
+FinancialChange: integer
+HouseholdChange: integer
+EvictionHistory: integer
+SubsidyAtRisk: integer
+LiteralHomelessHistory: integer
+DisabledHoH: integer
+CriminalRecord: integer
+SexOffender: integer
+DependentUnder6: integer
+SingleParent: integer
+HH5Plus: integer
+IraqAfghanistan: integer
+FemVet: integer
+HPScreeningScore: integer
+ThresholdScore: integer
+VAMCStation: varchar(5)
+UserID: dkz

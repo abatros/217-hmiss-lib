@@ -1,0 +1,492 @@
+---
+- otype: config
+  skip: true
+  create_missing_organization: true
+  create_missing_user: true
+  create_missing_client: true
+
+- otype: -purge-clients
+- otype: -list-clients
+- otype: list-clients-revisions
+- otype: -exit
+
+- otype: -client
+  first_names: Crystal
+  last_name: Arteaga
+  id: 1084
+  ssn: 123-66-1084
+
+- otype: -list-clients-revisions
+- otype: -exit
+
+
+- otype: -acs-object-type
+  object_type: hmis-client-folder
+  pretty_name: HMIS Client Folder
+  pretty_plural: HMIS Clients Folders
+  supertype: content_folder
+  abstract_p: false
+
+
+- otype: -xray-instance
+- otype: -purge-organizations
+- otype: -purge-clients
+- otype: -list-users
+- otype: -exit
+
+- otype: organization
+  title: Hathaway-Sycamores
+  sa: 13-San Gabriel Valley, 18-South Bay/Harbor
+
+
+- otype: program
+  title: Road To Recovery
+  organization:
+    title: Hathaway-Sycamores
+
+
+- otype: -purge-organizations
+- otype: -list-organizations
+  verbose: 1
+
+- otype: -list-folders
+  verbose: 1
+
+- otype: -list-programs
+  verbose: 0
+
+
+- otype: user
+  first_names: Pamela
+  last_name: Griffin
+  email: pgriffin@avdvc.org
+  screen_name: pgriffin
+  admin:
+    - org: Valley Oasis
+
+
+- otype: organization
+  title: Salvation Army
+  sa: 11-Antelope Valley
+  admin:
+    - email: dkz@gmail.com
+      first_names: dominique
+      last_name: klutz
+
+- otype: organization
+  title: Village Family Services
+  sa: 12-San Fernando Valley
+  cat: youth
+
+- otype: organization
+  title: Hathaway-Sycamores
+  sa: 13-San Gabriel Valley, 18
+
+- otype: organization
+  title: Los Angeles LGBT Center
+  sa: 14-Metro/Central Los Angeles
+
+- otype: organization
+  title: Safe Place for Youth
+  sa: 15-West Los Angeles
+
+- otype: organization
+  title: Sanctuary of Hope
+  sa: 16-South Los Angeles
+
+- otype: organization
+  title: Jovenes, Inc.
+  sa: 17-Southeast/East Los Angeles
+
+- otype: organization
+  title: LA Family Housing
+  sa: 12-San Fernando Valley
+  admin:
+  - name: Kris Freed
+    email: kreed@lafh.org
+
+- otype: organization
+  title: The People Concern
+  sa: 14-Metro/Central Los Angeles
+  admin:
+  - name: Hazel Lopez
+    email: hlopez@thepeopleconcern.org
+
+- otype: organization
+  title: St. Joseph Center
+  sa: 15-West Los Angeles
+  admin:
+  - name: Lindsay Saunders
+    email: lsaunders@stjosephctr.org
+
+- otype: organization
+  title: Harbor Interfaith Services
+  sa: 18-South Bay/Harbor
+  admin:
+  - name: Shari Weaver
+    email: sweaver@harborinterfaith.org
+
+- otype: organization
+  title: Valley Oasis
+  sa: 11-Antelope Valley
+  admin:
+  - name: Pamela Griffin
+    email: pgriffin@avdvc.org
+
+- otype: organization
+  title: Union Station Homeless Services
+  sa: 13-San Gabriel Valley
+  admin:
+  - name: Ryan Izell
+    email: rizell@unionstationhs.org
+
+- otype: organization
+  title: Hathaway Sycamore
+  sa: 13-San Gabriel Valley
+
+- otype: organization
+  title: Special Service for Groups (SSG/HOPICS)
+  sa: 16-South Los Angeles
+  admin:
+  - name: Marion Sanders
+    email: msanders@hopics.org
+
+- otype: organization
+  title: CRCD
+  sa: 16-South Los Angeles
+
+- otype: organization
+  title: The Whole Child
+  sa: 17-Southeast/East Los Angeles
+
+- otype: organization
+  title: People Assisting the Homeless
+  msa:
+  - sa: 17-Southeast/East Los Angeles
+    cat: adults
+  - sa: 14-Metro/Central Los Angeles
+    cat: families
+  admin:
+  - name: Meredith Berkson
+    email: meredithb@epath.org
+
+
+- otype: client
+  first_names: Dioselina
+  last_name: Maldonado
+  id: 41
+  ssn: 123-66-41
+
+- otype: client
+  first_names: Ivan
+  last_name: Martinez
+  id: 117
+  ssn: 123-66-117
+
+
+- otype: client
+  first_names: Megan
+  last_name: Carter
+  id: 157
+  ssn: 123-66-157
+
+
+- otype: client
+  first_names: Sara
+  last_name: Martinez Rodriguez
+  id: 254
+  ssn: 123-66-254
+
+
+- otype: client
+  first_names: TiQuan A
+  last_name: Bryant
+  id: 334
+  ssn: 123-66-334
+
+
+- otype: client
+  first_names: Evelyn
+  last_name: Lomeli
+  id: 477
+  ssn: 123-66-477
+
+
+- otype: client
+  first_names: Katherine I
+  last_name: Martin
+  id: 492
+  ssn: 123-66-492
+
+
+- otype: client
+  first_names: Nancy
+  last_name: Martinez
+  id: 495
+  ssn: 123-66-495
+
+
+- otype: client
+  first_names: Emnet
+  last_name: Markos
+  id: 810
+  ssn: 123-66-810
+
+
+- otype: client
+  first_names: Alonzo
+  last_name: Castanon
+  id: 844
+  ssn: 123-66-844
+
+
+- otype: client
+  first_names: Nicolas
+  last_name: Arroyo Prado
+  id: 972
+  ssn: 123-66-972
+
+
+- otype: client
+  first_names: Rosaline
+  last_name: Luis
+  id: 993
+  ssn: 123-66-993
+
+
+- otype: client
+  first_names: Angel Alberto
+  last_name: Madrigal
+  id: 996
+  ssn: 123-66-996
+
+
+- otype: client
+  first_names: Gustavo
+  last_name: Alvarez
+  id: 1026
+  ssn: 123-66-1026
+
+
+- otype: client
+  first_names: Saul
+  last_name: Luis
+  id: 1042
+  ssn: 123-66-1042
+
+
+- otype: client
+  first_names: Antonio
+  last_name: Salinas
+  id: 1075
+  ssn: 123-66-1075
+
+
+- otype: client
+  first_names: Crystal
+  last_name: Arteaga
+  id: 1084
+  ssn: 123-66-1084
+
+
+- otype: client
+  first_names: Denise
+  last_name: Arteaga
+  id: 1087
+  ssn: 123-66-1087
+
+
+- otype: client
+  first_names: Diana
+  last_name: Brito
+  id: 1094
+  ssn: 123-66-1094
+
+
+- otype: client
+  first_names: Kilonie
+  last_name: Buchanan
+  id: 1184
+  ssn: 123-66-1184
+
+
+- otype: client
+  first_names: FAVIOLA
+  last_name: CARRILLO
+  id: 1245
+  ssn: 123-66-1245
+
+
+- otype: client
+  first_names: TANIA
+  last_name: CARRILLO
+  id: 1249
+  ssn: 123-66-1249
+
+
+- otype: client
+  first_names: LUISA FERNANDA
+  last_name: MARTIN
+  id: 1275
+  ssn: 123-66-1275
+
+
+- otype: client
+  first_names: Samantha
+  last_name: Carrasco
+  id: 1353
+  ssn: 123-66-1353
+
+
+- otype: client
+  first_names: Isaisalvador
+  last_name: Martinez
+  id: 1412
+  ssn: 123-66-1412
+
+
+- otype: client
+  first_names: ben
+  last_name: carson
+  id: 1463
+  ssn: 123-66-1463
+
+
+- otype: client
+  first_names: do
+  last_name: k
+  id: 1842
+  ssn: 123-66-1842
+
+
+- otype: client
+  first_names: bernie
+  last_name: sanders
+  id: 1902
+  ssn: 123-66-1902
+
+
+- otype: client
+  first_names: claude
+  last_name: talman
+  id: 1935
+  ssn: 123-66-1935
+
+
+- otype: client
+  first_names: delia
+  last_name: lopez
+  id: 1964
+  ssn: 123-66-1964
+
+
+- otype: client
+  first_names: Herbert
+  last_name: Laws
+  id: 2001
+  ssn: 123-66-2001
+
+
+- otype: client
+  first_names: dominique
+  last_name: klutz
+  id: 2068
+  ssn: 123-66-2068
+
+
+- otype: client
+  first_names: jules
+  last_name: cesar
+  id: 2094
+  ssn: 123-66-2094
+
+
+- otype: client
+  first_names: jean
+  last_name: petit
+  id: 2163
+  ssn: 123-66-2163
+
+
+- otype: client
+  first_names: Xavier
+  last_name: Quan
+  id: 2169
+  ssn: 123-66-2169
+
+
+- otype: client
+  first_names: jules
+  last_name: cesar
+  id: 2223
+  ssn: 123-66-2223
+
+
+- otype: client
+  first_names: jules
+  last_name: cesar
+  id: 2225
+  ssn: 123-66-2225
+
+
+- otype: client
+  first_names: jules
+  last_name: cesar
+  id: 2227
+  ssn: 123-66-2227
+
+
+- otype: client
+  first_names: jules
+  last_name: cesar
+  id: 2229
+  ssn: 123-66-2229
+
+
+- otype: client
+  first_names: jules
+  last_name: cesar
+  id: 2231
+  ssn: 123-66-2231
+
+
+- otype: client
+  first_names: vivian
+  last_name: tanamachi
+  id: 2272
+  ssn: 123-66-2272
+
+
+- otype: client
+  first_names: Paul
+  last_name: Crosswhite
+  id: 2278
+  ssn: 123-66-2278
+
+
+- otype: client
+  first_names: julius
+  last_name: cesar
+  id: 2289
+  ssn: 123-66-2289
+
+
+
+- otype: exit
+
+
+- otype: -list-folders
+- otype: purge-groups
+- otype: -purge-folders
+  cascade: true
+
+
+
+- otype: organization
+  title: Hathaway-Sycamores
+  sa: 13-San Gabriel Valley, 18-South Bay/Harbor
+
+- otype: program
+  title: Road To Recovery
+  organization:
+    title: Hathaway-Sycamores

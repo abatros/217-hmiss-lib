@@ -1,0 +1,83 @@
+---
+- title: Salvation Army
+  sa: 11-Antelope Valley
+
+- title: Village Family Services
+  sa: 12-San Fernando Valley
+  cat: youth
+
+- title: Hathaway-Sycamores
+  sa: 13-San Gabriel Valley, 18
+
+- title: Los Angeles LGBT Center
+  sa: 14-Metro/Central Los Angeles
+
+- title: Safe Place for Youth
+  sa: 15-West Los Angeles
+
+- title: Sanctuary of Hope
+  sa: 16-South Los Angeles
+
+- title: Jovenes, Inc.
+  sa: 17-Southeast/East Los Angeles
+
+- title: LA Family Housing
+  sa: 12-San Fernando Valley
+  contact:
+    name: Kris Freed
+    email: kreed@lafh.org
+
+- title: The People Concern
+  sa: 14-Metro/Central Los Angeles
+  contact:
+    name: Hazel Lopez
+    email: hlopez@thepeopleconcern.org
+
+- title: St. Joseph Center
+  sa: 15-West Los Angeles
+  contact:
+    name: Lindsay Saunders
+    email: lsaunders@stjosephctr.org
+
+- title: Harbor Interfaith Services
+  sa: 18-South Bay/Harbor
+  contact:
+    name: Shari Weaver
+    email: sweaver@harborinterfaith.org
+
+- title: Valley Oasis
+  sa: 11-Antelope Valley
+  contact:
+    name: Pamela Griffin
+    email: pgriffin@avdvc.org
+
+- title: Union Station Homeless Services
+  sa: 13-San Gabriel Valley
+  contact:
+    name: Ryan Izell
+    email: rizell@unionstationhs.org
+
+- title: Hathaway Sycamore
+  sa: 13-San Gabriel Valley
+
+- title: Special Service for Groups (SSG/HOPICS)
+  sa: 16-South Los Angeles
+  contact:
+    name: Marion Sanders
+    email: msanders@hopics.org
+
+- title: CRCD
+  sa: 16-South Los Angeles
+
+- title: The Whole Child
+  sa: 17-Southeast/East Los Angeles
+
+- title: People Assisting the Homeless
+  msa:
+  - sa: 17-Southeast/East Los Angeles
+    cat: adults
+  - sa: 14-Metro/Central Los Angeles
+    cat: families
+  contact:
+    name: Meredith Berkson
+    email: meredithb@epath.org

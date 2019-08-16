@@ -1,0 +1,19 @@
+{
+  "name": "217-brad-carson-hmis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "101-create-new-instance.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^8.0.1",
+    "js-yaml": "^3.13.1",
+    "massive": "^5.11.0",
+    "object-hash": "^1.3.1",
+    "pg-monitor": "^1.1.0",
+    "yargs": "^13.2.4"
+  }
+}
